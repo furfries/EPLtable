@@ -51,10 +51,10 @@ let table = document.createElement('table');
         let items = ['team','palyed','win','loss','draw','goalsFor','goalsAgainst','goalsDifference','points'];
          for (let i = 0; i < countTeams; i++){
             let tr = document.createElement('tr');
-                for (let j = 0; j < 9; j++) {
+                for (let j = 0; j < items.length; j++) {
                     let td = document.createElement('td');
                     let item = teams[i][items[j]];
-                     td.innerHTML = item ? item : item;
+                     td.innerHTML = item;
                     tr.appendChild(td);
                 }
                 tbody.appendChild(tr);
