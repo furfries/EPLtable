@@ -23,13 +23,17 @@ table  tr:hover {
     font-weight:bold;
     color: black;
 }
-
+.scorers {
+    margin-bottom: 50px;
+}
+.scorers tr {
+    background-color: #f7f9fc;
+}
 .scorers table tr:first-child {
     background-color: #04f5ff;
     font-weight:bold;
     color: black;
-}#
-
+}
 table tr:last-child {
     border-bottom: none;
 }
@@ -64,8 +68,6 @@ header img {
     display: flex;
     justify-content: center;
 }
-
-
 .content {
     display: flex;
     justify-content: center;
@@ -113,60 +115,35 @@ header img {
     font-weight: bold;
     color: #38003c;
 }
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+.eplblock a {
+    text-decoration: none;
 }
-
-.switch input {display:none;}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #EAFF04;
-  -webkit-transition: .4s;
-  transition: .4s;
+.scorerstext:hover{
+    color: #04f5ff;
+    font-size: 23px;
 }
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color:#6a317f;
-  -webkit-transition: .4s;
-  transition: .4s;
+.scorerstext1:hover{
+    color: #04f5ff;
+    font-size: 23px;
 }
-
-input:checked + .slider {
-  background-color: #04f5ff;
+.epltext:hover {
+    font-size: 23px;
+    font-weight: bold;
 }
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+.epltext1:hover {
+    font-size: 23px;
+    font-weight: bold;
+    color: #EAFF04;
 }
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+.scorersblock a {
+    text-decoration: none;
 }
-
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
-    margin-left: 3%;
+    height: 70px;
 }
 .box {
     display: flex;
@@ -176,17 +153,24 @@ input:checked + .slider:before {
 .epltext {
     color: #EAFF04;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     padding-right: 30px;
 }
-.scorerstext {
-    color: #04f5ff;
+.epltext1 {
+    color: #C8C8C8;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
+    padding-right: 30px;
+    }
+.scorerstext {
+    color:  #C8C8C8;
+    font-weight: bold;
+    font-size: 20px;
     padding-left: 30px;
 }
-.scorers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.scorerstext1 {
+    color: #04f5ff;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
 }
